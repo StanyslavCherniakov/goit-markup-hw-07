@@ -19,28 +19,32 @@
   </head>
   <body>
     <!-- Шапка -->
-    <header>
+    <header class="header">
       <div class="container main-nav">
-        <a href="" class="logo"><span>Web</span>Studio</a>
+        <a class="logo" href=""><span class="logo__text">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li class="item"><a href="" class="link current">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link site-nav__link--current">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon-mail" width="16" height="12">
+          <li class="auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="auth-nav__link">
+              <svg class="auth-nav__icon-mail" width="16" height="12">
                 <use href="./images/icons-sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-tell" width="10" height="16">
+          <li class="auth-nav__item">
+            <a href="tel:+380961111111" class="auth-nav__link">
+              <svg class="auth-nav__icon-tell" width="10" height="16">
                 <use href="./images/icons-sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -395,6 +399,7 @@
         </form>
       </div>
     </footer>
+    <!-- Бэкдроп -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-btn" type="button">
@@ -449,6 +454,7 @@
         </form>
       </div>
     </div>
+    <!-- Скрипт -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
