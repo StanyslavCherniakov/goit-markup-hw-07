@@ -182,7 +182,7 @@ img {
   background-color: var(--bg-section-color);
 }
 
-.hero .wraper {
+.hero__wrapper {
   padding: 200px 0;
   max-width: 1600px;
   margin-right: auto;
@@ -191,7 +191,7 @@ img {
     url(../images/hero.jpg);
   text-align: center;
 }
-.hero-title {
+.hero__title {
   margin: 0 auto;
   max-width: 650px;
 
@@ -202,7 +202,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero button {
+.hero__button {
   display: inline-block;
   margin-top: 30px;
   padding: 10px 32px;
@@ -224,8 +224,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero button:focus,
-.hero button:hover {
+.hero__button:focus,
+.hero__button:hover {
   background-color: #188ce8;
 }
 
@@ -388,10 +388,6 @@ img {
   margin-right: 10px;
 }
 
-.footer-social__icon {
-  fill: currentColor;
-}
-
 /* <!-- Постоянные клиенты --> */
 .clients-title {
   font-weight: 700;
@@ -492,6 +488,10 @@ img {
 
 .footer-social__list {
   display: flex;
+}
+
+.footer-social__icon {
+  fill: currentColor;
 }
 
 .footer-social__item:not(:last-child) {
