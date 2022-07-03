@@ -314,11 +314,15 @@ img {
 }
 
 /* Наша команда */
-.section-teem .list {
+.teem {
+  color: var(--secondary-text-color);
+}
+
+.teem__list {
   display: flex;
 }
 
-.section .wrapper {
+.teem__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -326,7 +330,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-teem .item {
+.teem__item {
   flex-basis: calc((100%-90) / 4);
   margin-right: 30px;
 
@@ -336,14 +340,14 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-teem .item:nth-child(4) {
+.teem__item:nth-child(4) {
   margin-right: 0;
 }
 
-.section-teem {
+.teem {
   background-color: var(--secondary-bg-color);
 }
-.teem-title {
+.teem__title {
   margin-bottom: 50px;
 
   color: var(--secondary-text-color);
@@ -352,10 +356,8 @@ img {
   line-height: 1.17;
   text-align: center;
 }
-.teem {
-  color: var(--secondary-text-color);
-}
-.teem-name {
+
+.teem__name {
   margin-bottom: 10px;
 
   color: var(--secondary-text-color);
@@ -364,14 +366,13 @@ img {
   line-height: 1.18;
 }
 
-.role {
+.teem__role {
   font-size: 16px;
   line-height: 1.18;
+  color: var(--primary-text-color);
 }
 
-/* Ссылки на соцсети */
-
-.social-links {
+.social-contacts {
   display: flex;
   justify-content: center;
   margin-top: 16px;
@@ -380,8 +381,35 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.item-social:not(:last-child) {
+.social-contacts__item:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-contacts__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-contacts__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-contacts__icon {
+  fill: currentColor;
+}
+
+.social-contacts__link:hover,
+.social-contacts__link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* <!-- Постоянные клиенты --> */
