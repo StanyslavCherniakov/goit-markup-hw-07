@@ -268,24 +268,20 @@ img {
 }
 
 /* Чем мы занимаемся */
-.section-wedo {
+.work-area {
   padding-top: 0;
 }
 
-.section-wedo .list {
+.work-area__list {
   display: flex;
   margin-top: 50px;
 }
 
-.section-wedo .item:nth-child(-n + 2) {
+.work-area__item:nth-child(-n + 2) {
   margin-right: 30px;
 }
 
-.section-wedo img {
-  display: block;
-}
-
-.section-wedo .title {
+.work-area__title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -293,11 +289,11 @@ img {
   text-align: center;
 }
 
-.section-wedo .item {
+.work-area__item {
   position: relative;
 }
 
-.wrapper-text {
+.work-area__wrapper {
   position: absolute;
   bottom: 0;
   width: 100%;
