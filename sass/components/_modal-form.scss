@@ -136,6 +136,8 @@
 }
 
 .custom-checkbox__input:checked ~ .custom-checkbox__icon {
+  background-image: url('../../images/icon-check.svg');
+  background-size: contain;
   background-color: $accent-color;
   border-color: $accent-color;
 }
